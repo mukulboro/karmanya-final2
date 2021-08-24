@@ -1,0 +1,52 @@
+.customcard {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  font-family: "Playfair Display";
+  color: white;
+  width: 20vw;
+  border-radius: 30px;
+  height: 350px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.customcard:hover {
+  transition: 1s;
+  cursor: pointer;
+  transform: scale(1.055);
+  transition: all 0.25s ease-in-out;
+}
+
+.image {
+  width: 90%;
+}
+.cardtitle {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.cardtitle span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.cardtitle:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  top: 90px;
+  left: 0;
+  border-bottom: 7px solid white;
+}
+@media only screen and (max-width: 1290px) {
+  .customcard {
+    width: 70vw;
+    height: 260px;
+    margin-right: 0;
+  }
+}

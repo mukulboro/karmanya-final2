@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate{
+  transition: 0.25s;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  border-radius: 0;
+  margin-top: 3rem;
+  font-size: 2.7rem;
+  padding: 4%;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  border-style: solid;
+  letter-spacing: 4px;
+}
+
+.donate:hover{
+  transition: 0.25s;
+  color: white;
+  background-color: #04AA6D;
+  letter-spacing: 6px;
+  padding: 6%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .container {
+  }
+}

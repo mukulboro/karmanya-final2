@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  top: 5px;
+  margin: 0 2%;
+  margin-top: 20px;
+  padding-right: 2%;
+  transform: translate(-50%);
+}
+.headerImg {
+  cursor: pointer;
+}
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid black;
+  transition: width 0.25s ease-in-out;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a:last-child {
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.navcomp {
+  display: flex;
+  align-items: center;
+}
+.navcomp p {
+  margin-right: 30px;
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+.mobileparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.mobilenav li {
+  text-align: center;
+  list-style: none;
+  margin-top: 20%;
+}
+.mobilenav li a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.mobilenav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid black;
+  transition: width 0.25s ease-in-out;
+}
+.mobilenav a:hover::after {
+  width: 100%;
+}
+.mobilenav {
+  position: relative;
+  top: 15vh;
+  z-index: 100;
+  font-family: "Roboto";
+  align-items: center;
+}
+.hamMenu {
+  position: relative;
+  width: 25px;
+  height: 20px;
+}
+
+.hamMenu span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.bar4,
+.bar5 {
+  transition: all 0.25s ease-in-out;
+  top: 10px;
+}
+
+.bar3 {
+  top: 20px;
+}
+.bar1,
+.bar3 {
+  transition: all 0.4s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .mobilenav {
+    padding: 0;
+  }
+  .nav {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navcomp {
+    display: none;
+  }
+}

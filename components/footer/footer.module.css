@@ -1,0 +1,22 @@
+.footer {
+  width: 100vw;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  margin-top: 50px;
+}
+.footer a {
+  text-decoration: none;
+  color: #4267b2;
+}
+.copyright {
+  font-size: 1rem;
+  color: rgb(77, 72, 72);
+}
+.footer p {
+  margin-left: 5%;
+  margin-right: 5%;
+  box-sizing: border-box;
+  padding-top: 1%;
+  border-top: 1px solid gray;
+}

@@ -1,0 +1,18 @@
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  background-color: #5cdb95;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}

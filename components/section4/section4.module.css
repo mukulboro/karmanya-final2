@@ -1,0 +1,21 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 15%;
+  margin-top: 75px;
+}
+.header {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .blog {
+    flex-direction: column;
+  }
+  .header {
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+  }
+}
