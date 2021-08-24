@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 .h1 {
   font-family: "Roboto", "sans-serif";
@@ -9,61 +9,71 @@
   letter-spacing: 0.5rem;
 }
 
-.description{
-    font-family: 'Roboto', sans-serif;
-    width: 80%;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: auto;
+.description {
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  text-align: justify;
+  margin: auto;
 }
 
-.loading{
-    text-align: center;
-    font-size: 1.5rem;
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.work{
-    display: grid;
-    grid-template-columns: 33.333% 33.333% 33.333%;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    background-color: cadetblue;
-    width: 80%;
-    padding: 2%;
-    margin: 2% auto;
-    border-radius: 10px;
+.work {
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 2% auto;
+  border-radius: 10px;
 }
 
-.workCard{
+.workCard {
+  margin-top: 50px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 20px;
+}
+.workCard:nth-child(3) {
+  margin-right: 0;
+}
+.workTitle {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+.workBody {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: justify;
+  padding: 5%;
+  font-size: 1.25rem;
+}
+.workCard:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+.workImg {
+  border-radius: 7px;
+  width: 11rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .work {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid 2px white;
-    width: 20rem;
-    height: 30rem;
-    border-radius: 10px;
-    margin-top: 2%;
-}
-
-.workTitle{
-    font-family: 'Playfair Display', serif;
-    color: white;
-}
-
-.workBody{
-    font-family: 'Roboto', sans-serif;
-}
-
-.workImg{
-    border-radius: 10px;
-    width: 17rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .work{
-        display: flex;
-        flex-direction: column;
-    }
+  }
+  .workCard {
+    width: 65vw;
+  }
 }

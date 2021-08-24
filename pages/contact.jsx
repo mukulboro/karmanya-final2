@@ -5,19 +5,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/contact.module.css";
-import Head from 'next/dist/next-server/lib/head';
-
-
+import Head from "next/dist/next-server/lib/head";
+import Button from "@material-ui/core/Button";
 export const ContactUs = () => {
-
   return (
     <>
-
-    <Head>
-      <title>
-        Contact Us
-      </title>
-    </Head>
+      <Head>
+        <title>Contact Us</title>
+      </Head>
       <h1 className={styles.h1}>Contact Us</h1>
       <section id={styles.mainHolder}>
         <div id={styles.miniHolder}>
@@ -48,19 +43,34 @@ export const ContactUs = () => {
       <h1 className={styles.h1}>Send us a message</h1>
 
       <div className={styles.formHolder}>
-          <form className={styles.form} action="https://mailthis.to/mukul.development@gmail.com" method="POST">
-            <label className={styles.label} htmlFor="fullName">Full Name: </label>
-            <input className={styles.input}  type="text" name="fullName"/>
+        <form
+          className={styles.form}
+          action="https://mailthis.to/mukul.development@gmail.com"
+          method="POST"
+        >
+          <input
+            className={styles.input}
+            type="text"
+            name="fullName"
+            placeholder="Enter name.."
+          />
 
-            <label className={styles.label}  htmlFor="email">Email: </label>
-            <input className={styles.input} type="email" name="email" />
+          <input
+            className={styles.input}
+            type="email"
+            name="email"
+            placeholder="Enter email.."
+          />
 
-            <label className={styles.label}  htmlFor="message">Message: </label>
-            <textarea className={styles.message} name="message"></textarea>
+          <textarea
+            placeholder="Type your message"
+            className={styles.message}
+            name="message"
+          ></textarea>
 
-            <button className={styles.submit}>Submit</button>
-          </form>
-        </div>
+          <button className={styles.button}>Submit</button>
+        </form>
+      </div>
     </>
   );
 };
